@@ -18,10 +18,7 @@ function App({ placesCount, offers }: AppProps): JSX.Element {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/"
-          element={<MainPage placesCount={placesCount} offers={offers} />}
-        />
+        <Route path="/" element={<MainPage placesCount={placesCount} offers={offers} />} />
         <Route path="/login" element={<LoginPage />} />
         <Route
           path="/favorites"

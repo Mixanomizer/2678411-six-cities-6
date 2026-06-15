@@ -1,20 +1,6 @@
 import { createReducer } from '@reduxjs/toolkit';
-import {
-  changeCity,
-  fillOffers,
-  setAuthorizationStatus,
-  clearOfferData,
-} from './action';
-import {
-  fetchOffers,
-  fetchOffer,
-  fetchNearbyOffers,
-  fetchReviews,
-  submitReview,
-  checkAuth,
-  login,
-  logout,
-} from './api-actions';
+import { changeCity, fillOffers, setAuthorizationStatus, clearOfferData } from './action';
+import { fetchOffers, fetchOffer, fetchNearbyOffers, fetchReviews, submitReview, checkAuth, login, logout } from './api-actions';
 import { Offer, DetailedOffer } from '../types/offer';
 import { Review } from '../types/review';
 import { UserData } from '../types/user';
